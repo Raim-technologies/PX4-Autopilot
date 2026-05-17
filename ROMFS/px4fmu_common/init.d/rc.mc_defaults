@@ -17,7 +17,9 @@ fi
 
 param set-default NAV_ACC_RAD 2
 
-param set-default RTL_RETURN_ALT 30
-param set-default RTL_DESCEND_ALT 10
+# vla_mock デモ規模 (離陸 5m / 巡航 3m) に合わせて RTL 高度を引き下げる。
+# 既定の 30m/10m だと return で機体が一気に 30m まで急上昇してしまうため。
+param set-default RTL_RETURN_ALT 6
+param set-default RTL_DESCEND_ALT 3
 
 param set-default GPS_UBX_DYNMODEL 6
